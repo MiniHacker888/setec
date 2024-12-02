@@ -1,0 +1,53 @@
+/* Estilo específico para el formulario de registro */
+.login-container {
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid white; /* Borde blanco */
+    border-radius: 8px; /* Esquinas redondeadas */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Texto en color blanco */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2); /* Sombra sutil */
+    max-width: 500px; /* Ancho máximo para el formulario */
+    margin: 40px auto; /* Centrado horizontal y espacio superior/inferior */
+    font-family: 'Roboto', sans-serif; /* Fuente agradable */
+  }
+  
+  /* Estilo de los títulos dentro del formulario */
+  .login-container h4, .register-container h5 {
+    color: white; /* Texto en blanco */
+    text-align: center; /* Centrado del texto */
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para los botones */
+  .login-container button {
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Texto en blanco */
+    border: 2px solid white; /* Borde blanco */
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; /* Transición suave */
+  }
+  
+  .login-container button:hover {
+    background-color: white; /* Fondo blanco al pasar el ratón */
+    color: black; /* Texto negro al pasar el ratón */
+  }
+  
+  /* Diseño responsivo */
+  @media (max-width: 767px) {
+    .register-container {
+      padding: 15px;
+    }
+  }
+  
+  /* Estilo para los encabezados <h4> */
+h4 {
+    color: black !important; /* Texto en color negro */
+    font-weight: 700; /* Más negrita */
+    margin-bottom: 10px;
+  }
+  
+  h5 {
+    color: rgba(0, 0, 0, 0.8) !important; /* Negro más tenue */
+    font-weight: 500;
+    margin-bottom: 20px;
+  }

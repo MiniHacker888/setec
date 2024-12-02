@@ -1,0 +1,157 @@
+/* Estilos específicos para la página Sobre Nosotros */
+.about-container {
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-content {
+  border: 2px solid rgb(245, 241, 241); /* Borde blanco sin fondo blanco */
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  color: #fdf7f7; /* Color de texto oscuro para contraste */
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #d9e714; /* Color azul para el encabezado */
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.service-section {
+  padding: 30px;
+  border-radius: 8px;
+  color: #f7f4f4;
+  border: 2px solid rgb(245, 242, 242); /* Borde blanco */
+  background-color: transparent; /* Fondo transparente */
+}
+
+.service-section h2 {
+  font-size: 2rem;
+  color: #d9e714;
+  margin-bottom: 20px;
+}
+
+.service-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.service-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-section li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.service-section li strong {
+  color: #dfe1e2;
+}
+
+/* Media Queries para diseño responsivo */
+/*@media (max-width: 767px) {
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .service-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p,
+  .service-section p,
+  .service-section li {
+    font-size: 1rem;
+  }
+}
+*/
+
+
+/* Estilo para el pie de página */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 200px;
+}
+
+.footer p {
+  font-size: 10px;
+  margin: 0;
+}
+
+
+/* Media Queries para diseño responsivo */
+
+/* En pantallas pequeñas */
+@media (max-width: 767px) {
+  .home-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* En pantallas medianas */
+@media (max-width: 1024px) {
+  .home-container {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .images {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .images img {
+    width: 45%;
+  }
+}
+
+/* En pantallas grandes */
+@media (min-width: 1025px) {
+  .home-container {
+    padding: 80px 20px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .images img {
+    width: 250px;
+    height: 150px;
+  }
+}   

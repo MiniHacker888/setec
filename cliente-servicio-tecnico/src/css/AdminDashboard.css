@@ -1,0 +1,268 @@
+/* Estilos generales */
+.dashboard-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container h1 {
+  color: #333;
+}
+
+.perfil-usuario h3 {
+  font-size: 1.5em;
+  color: #f1efef;
+  margin-top: 30px;
+}
+
+
+h1, h2, p {
+  text-align: center;
+  margin-top: 30px;
+  color: #f1efef;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, textarea, button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  background-color: #f9f9f9;
+}
+
+.styled-table th, .styled-table td {
+  text-align: center;
+  padding: 12px;
+}
+
+.styled-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.styled-table button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* botón de cerrar sesión */
+.logout-button-container {
+  position: absolute; /* Fijar el botón en una posición específica */
+  top: 20%; /* Aumentar el valor de top para bajarlo más */
+  right: 10px; /* Mantener el botón en el lado derecho con un margen */
+  z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+
+.logout-button {
+  background-color: transparent; /* Fondo transparente */
+  color: #fafffb; /* Color de texto rojo (puedes ajustarlo) */
+  border: 2px solid #28a745; /* Borde rojo de 2px */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold; /* Hace que el texto esté en negrita */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logout-button:hover {
+  background-color: #30a330; /* Fondo rojo cuando se pasa el mouse */
+  color: white; /* Cambiar el color del texto cuando está en hover */
+}
+
+
+
+/* Estilo exclusivo para la clase .edelbutton */
+.edel-button button {
+  background-color: transparent; /* Fondo transparente */
+  color: rgb(216, 213, 32); /* Texto blanco */
+  border: 2px solid #28a745; /* Borde verde */
+  padding: 5px 12px; /* Espaciado interno adecuado */
+  border-radius: 12px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de letra */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transición suave */
+  margin: 0 5px; /* Espaciado entre los botones */
+  width: 120px; /* Ancho fijo */
+  text-align: center; /* Centrar el texto */
+}
+
+/* Estilo cuando el botón se encuentra en hover */
+.edel-button button:hover {
+  background-color: #0d3dc2; /* Fondo verde al pasar el cursor */
+  color: white; /* Texto blanco en hover */
+  border-color: #28a745; /* Mantener borde verde al hacer hover */
+}
+
+
+/* Estilo exclusivo para la clase .guca-button */
+.guca-button button {
+  background-color: transparent; /* Fondo transparente */
+  color: rgb(251, 252, 250); /* Texto amarillo */
+  border: 2px solid #28a745; /* Borde verde */
+  padding: 8px 16px; /* Ajustar espaciado interno */
+  border-radius: 12px; /* Bordes redondeados */
+  font-size: 16px; /* Aumentar tamaño de letra */
+  font-weight: 600; /* Texto más negrita */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transición suave */
+  margin: 0 10px; /* Espaciado entre los botones */
+  width: 140px; /* Ancho fijo */
+  text-align: center; /* Centrar el texto */
+  display: inline-block; /* Para que los botones estén uno al lado del otro */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  text-transform: uppercase; /* Convertir texto a mayúsculas */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Agregar sombra ligera al texto */
+}
+
+/* Estilo cuando el botón se encuentra en hover */
+.guca-button button:hover {
+  background-color: #80e796; /* Fondo verde al pasar el cursor */
+  color: rgb(2, 2, 2); /* Texto blanco en hover */
+  border-color: #28a745; /* Mantener borde verde al hacer hover */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Más sombra en hover */
+}
+
+/* Estilo para el contenedor de los botones (centrar el contenido) */
+.guca-button {
+  text-align: center; /* Centrar los botones en el contenedor */
+  margin-top: 20px; /* Espaciado superior si es necesario */
+}
+
+
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .styled-table th, .styled-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .logout-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+
+/* Estilos para el Modal de Edición */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Ancho máximo del modal (ajustado a un porcentaje de la pantalla) */
+  max-width: 400px; /* Ancho máximo específico */
+  background-color: rgba(9, 190, 245, 0.7); /* Color rojo con transparencia */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(182, 49, 49, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.modal-content {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los formularios dentro del modal */
+.modal label {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.modal input,
+.modal select {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal button {
+  width: 48%; /* Botones más pequeños y juntos */
+  margin-top: 10px;
+  color: rgb(227, 230, 228);
+  border: 2px solid rgba(241, 245, 2, 0.5); /* Borde blanco suave */
+  border-radius: 12px; /* Bordes redondeados */
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: transparent; /* Fondo transparente para ver el borde */
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Sombra suave */
+  transition: all 0.3s ease; /* Efecto suave al hacer hover */
+}
+
+.modal button:hover {
+  background-color: rgba(173, 15, 15, 0.1); /* Fondo suave al pasar el cursor */
+  box-shadow: 0 6px 8px rgba(168, 17, 17, 0.2); /* Sombra más fuerte al hacer hover */
+}
+
+/* Estilo para los botones de acción en el modal */
+.guca-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Fondo de la pantalla */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 7, 7, 0.5);
+  z-index: 999;
+}

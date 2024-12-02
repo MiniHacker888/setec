@@ -1,0 +1,42 @@
+/* Barra de navegación */
+.navbar {
+    /*background-color: #42aaf5; /* Azul cielo moderado */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más robusta */
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Enlaces de la barra de navegación */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin: 0 10px; /* Aumentamos el espacio entre los elementos */
+  }
+  
+  /* Estilos de los enlaces (botones) */
+  .navbar-links a {
+    color: white;
+    font-size: 1.2rem; /* Tamaño de fuente moderado */
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 15px; /* Agregamos padding para darle espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  /* Efecto al pasar el ratón sobre los enlaces */
+  .navbar-links a:hover {
+    color: #fff; /* Texto blanco */
+    background-color: #318bf3; /* Color atractivo (naranja suave) */
+    transform: scale(1.1); /* El enlace se agranda */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Agregar sombra al pasar el ratón */
+  }
+  

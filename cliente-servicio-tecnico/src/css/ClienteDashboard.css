@@ -1,0 +1,95 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo de los grupos de formularios */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px; /* Reducir padding para hacer los campos más pequeños */
+  font-size: 0.9rem; /* Reducir el tamaño de la fuente */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 90px; /* Reducir la altura de la caja de texto */
+}
+
+button {
+  width: 100%;
+  padding: 10px; /* Reducir el tamaño del botón */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1rem; /* Reducir el tamaño de la fuente */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* botón de cerrar sesión */
+.logout-button-container {
+  position: absolute; /* Fijar el botón en una posición específica */
+  top: 20%; /* Aumentar el valor de top para bajarlo más */
+  right: 10px; /* Mantener el botón en el lado derecho con un margen */
+  z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+
+.logout-button {
+  background-color: transparent; /* Fondo transparente */
+  color: #fafffb; /* Color de texto blanco */
+  border: 2px solid #28a745; /* Borde verde */
+  padding: 8px 12px; /* Reducir padding */
+  border-radius: 5px;
+  font-size: 12px; /* Reducir tamaño de la fuente */
+  font-weight: bold; /* Hace que el texto esté en negrita */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logout-button:hover {
+  background-color: #30a330; /* Fondo verde más oscuro */
+  color: white; /* Cambiar el color del texto cuando está en hover */
+}
+
+
+/* Estilo para el campo de teléfono */
+input[type="tel"] {
+  width: 95%;
+  padding: 6px; /* Reducir el padding para hacerlo más pequeño */
+  font-size: 0.85rem; /* Reducir el tamaño de la fuente */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

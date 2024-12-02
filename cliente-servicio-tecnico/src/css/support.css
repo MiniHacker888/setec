@@ -1,0 +1,157 @@
+/* Estilos específicos para la página de Soporte Técnico */
+.support-container {
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .support-content {
+    border: 2px solid white; /* Borde blanco sin fondo blanco */
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    color: #c0c0c0; /* Color de texto oscuro para contraste */
+    background-color: transparent; /* Fondo transparente */
+  }
+  
+  .support-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #d9e714; /* Color azul para el encabezado */
+    margin-bottom: 20px;
+  }
+  
+  .support-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .support-content ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .support-content li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .support-content li strong {
+    color: #dadddd;
+  }
+  
+  
+  /* Media Queries para diseño responsivo */
+ /* @media (max-width: 767px) {
+    .support-content h1 {
+      font-size: 2rem;
+    }
+  
+    .support-content p,
+    .support-content li {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .support-content {
+      padding: 50px;
+    }
+  
+    .support-content h1 {
+      font-size: 2.8rem;
+    }
+  
+    .support-content li {
+      font-size: 1.2rem;
+    }
+  }
+  */
+
+  /* Para los párrafos y las listas */
+.about-content p, .service-section p, .support-content p {
+  font-size: 1rem;
+  color: #f8f8f8;
+  text-shadow: 0.5px 0.5px 2px rgba(71, 71, 71, 0.2), 1px 1px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para un borde delicado */
+}
+
+/* Estilo para el pie de página */
+.footer {
+  background-color: #333;
+  color: rgb(20, 17, 17);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 200px;
+}
+
+.footer p {
+  font-size: 10px;
+  margin: 0;
+}
+
+
+/* Media Queries para diseño responsivo */
+
+/* En pantallas pequeñas */
+@media (max-width: 767px) {
+  .home-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* En pantallas medianas */
+@media (max-width: 1024px) {
+  .home-container {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .images {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .images img {
+    width: 45%;
+  }
+}
+
+/* En pantallas grandes */
+@media (min-width: 1025px) {
+  .home-container {
+    padding: 80px 20px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .images img {
+    width: 250px;
+    height: 150px;
+  }
+}   
